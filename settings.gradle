@@ -1,0 +1,2 @@
+include 'cwsfe_website'
+includeBuild '../cwsfe_cms'
