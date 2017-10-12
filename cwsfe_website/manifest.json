@@ -1,0 +1,6 @@
+{
+  "name": "cwsfe_website",
+  "short_name": "cwsfe_website",
+  "start_url": "/",
+  "display": "standalone"
+}

@@ -1,7 +1,7 @@
 #don't commit
 sensitive_data.properties
 **/*.jks
-the_project_v.2.0
+the_project_v.2.0.5
 
 ### Java ###
 *.class
@@ -20,6 +20,7 @@ hs_err_pid*
 
 ### Gradle ###
 */.gradle/
+.gradle/
 build/
 */target/
 classes/

@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="cwsfe_website-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class Cwsfe_websiteApp extends Polymer.Element {
+      static get is() { return 'cwsfe_website-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'polymer 2'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(Cwsfe_websiteApp.is, Cwsfe_websiteApp);
+  </script>
+</dom-module>
