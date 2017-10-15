@@ -1,16 +1,490 @@
 <!doctype html>
-<html lang="pl">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+<html dir="ltr" lang="pl">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta charset="utf-8">
+  <meta name="description" content="CWSFE - Complete Working Solution For Everyone,usługi programistyczne Sońsk, usługi programistyczne Ciechanów"/>
+  <title>CWSFE</title>
+  <meta name="author" content="Radosław Osiński">
+  <meta name="robots" content="all"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>cwsfe_website</title>
-    <meta name="description" content="cwsfe_website description">
-    <link rel="manifest" href="manifest.json">
-    <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
-    <link rel="import" href="src/cwsfe_website-app/cwsfe_website-app.html">
-  </head>
-  <body>
-    <cwsfe_website-app></cwsfe_website-app>
-  </body>
+  <link rel="shortcut icon" href="static/layout/favicon.png">
+  <link rel="manifest" href="static/manifest.json"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic'
+  rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+
+  <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <link href="static/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+  <link href="static/fonts/fontello/css/fontello.css" rel="stylesheet">
+
+  <link href="static/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="static/plugins/rs-plugin-5/css/settings.css" rel="stylesheet">
+  <link href="static/plugins/rs-plugin-5/css/layers.css" rel="stylesheet">
+  <link href="static/plugins/rs-plugin-5/css/navigation.css" rel="stylesheet">
+  <link href="static/css/animations.css" rel="stylesheet">
+  <link href="static/plugins/owlcarousel2/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/plugins/owlcarousel2/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="static/plugins/hover/hover-min.css" rel="stylesheet">
+
+  <link href="static/css/style.css" rel="stylesheet">
+  <link href="static/css/typography-default.css" rel="stylesheet">
+  <link href="static/css/skins/light_blue.css" rel="stylesheet">
+  <link href="static/css/custom.css" rel="stylesheet">
+
+  <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+  <script type="module" src="src/mainView.js"></script>
+</head>
+<body class="front-page transparent-header">
+<div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
+
+<div id="app">
+  <!--HEAD<img src="./assets/logo.png"><br/>-->
+  <div class="page-wrapper">
+    <div class="header-container">
+
+      <div class="header-top dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-3 col-sm-6 col-lg-9">
+              <div class="header-top-first clearfix">
+                <ul class="social-links circle small clearfix hidden-sm-down">
+                  <li class="twitter"><a target="_blank" href="https://twitter.com/OsinskiRadoslaw"><i
+                    class="fa fa-twitter"></i></a></li>
+                  <li class="linkedin"><a target="_blank"
+                                          href="https://www.linkedin.com/in/radoslawosinski/"><i
+                    class="fa fa-linkedin"></i></a></li>
+                </ul>
+                <div class="social-links hidden-md-up circle small">
+                  <div class="btn-group dropdown">
+                    <button id="header-top-drop-1" type="button"
+                            class="btn dropdown-toggle dropdown-toggle--no-caret" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><i class="fa fa-share-alt"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-animation" aria-labelledby="header-top-drop-1">
+                      <li class="twitter"><a target="_blank"
+                                             href="https://twitter.com/OsinskiRadoslaw"><i
+                        class="fa fa-twitter"></i></a></li>
+                      <li class="linkedin"><a target="_blank"
+                                              href="https://www.linkedin.com/in/radoslawosinski/"><i
+                        class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <ul class="list-inline hidden-md-down">
+                  <li class="list-inline-item"><i class="fa fa-map-marker pr-1 pl-2"></i>06-430 Sońsk, ul.
+                    Ogrodowa 6
+                  </li>
+                  <li class="list-inline-item"><i class="fa fa-phone pr-1 pl-2"></i>+48 791-101-335</li>
+                  <li class="list-inline-item"><i class="fa fa-envelope-o pr-1 pl-2"></i>
+                    info@cwsfe.pl
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-9 col-sm-6 col-lg-3">
+
+              <div id="header-top-second" class="clearfix">
+                <div class="header-top-dropdown text-right">
+                  <div class="btn-group">
+                    <a href="http://cwsfe.pl/CWSFE_CMS/"
+                       class="btn dropdown-toggle btn-default btn-sm dropdown-toggle--no-caret"
+                       aria-expanded="false"><i class="fa fa-lock pr-2"></i>Zaloguj</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <header class="header fixed fixed-desktop clearfix">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-auto hidden-md-down pl-3">
+              <div class="header-first clearfix">
+
+                <div id="logo" class="logo">
+                  <a href="/"><img src="./static/layout/CWSFE_logo_64x64.png"
+                                   alt="CWSFE"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-xl-9">
+              <div class="header-second clearfix">
+                <div class="main-navigation animated">
+                  <nav class="navbar navbar-toggleable-md navbar-light p-0">
+
+                    <button class="navbar-toggler navbar-toggler-right" type="button"
+                            data-toggle="collapse" data-target="#navbar-collapse-1"
+                            aria-controls="navbar-collapse-1" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-brand clearfix hidden-lg-up">
+                      <div id="logo-mobile" class="logo">
+                        <a href="/"><img src="./static/layout/CWSFE_logo_64x64.png"
+                                         alt="CWSFE"></a>
+                      </div>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                      <ul class="navbar-nav ml-xl-auto">
+                        <li class="nav-item dropdown active mega-menu mega-menu--wide">
+                          <a class="nav-link" aria-haspopup="true" aria-expanded="false">Strona główna
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto ml-auto pr-3 hidden-md-down">
+            </div>
+          </div>
+        </div>
+      </header>
+
+    </div>
+
+    <section class="main-container light-gray-bg">
+      <br/>
+      <br/>
+      <br/>
+      <div class="row justify-content-md-center">
+        <div class="main col-lg-8">
+          <h4>Firma CWSFE istnieje na rynku od 2012 roku. Od tego czasu, nieprzerwanie, dostarcza usługi programistyczne
+            dla
+            przedsiębiorstw z branży:
+            telewizyjnej, telekomunikacyjnej, bankowej oraz medycznej.
+          </h4>
+
+          <h4>Mottem przewodnim firmy jest tworzenie kompletnych, działających rozwiązań dla każdego (ang. "Complete
+            Working Solution For Everyone"). Wynikiem pracy firmy jest grupa zadowolonych klientów i osób współpracujących
+            z nimi.</h4>
+
+          <section class="pv-40">
+            <div class="owl-carousel content-slider">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                    <div class="testimonial text-center">
+                      <h3 class="mt-3">Wiarygodni i solidni!</h3>
+                      <div class="separator"></div>
+                      <div class="testimonial-body">
+                        <blockquote>
+                          <p>Firma CWSFE to wiarygodny i solidny partner technologiczny.
+                            Wieloletnia współpraca przy rozwoju produktów związanych z Platformą Technologiczną jPALIO
+                            udowodniła nam, że na Radka Osińskiego,
+                            założyciela CWSFE, zawsze można liczyć, a każde zadanie, którego się on podejmuje,
+                            jest wykonane terminowo i zgodnie z naszymi wymaganiami.</p>
+                        </blockquote>
+                        <div class="testimonial-info-1">- Michał Klimek</div>
+                        <div class="testimonial-info-2">Manager jPALIO Business Solutions Sp. z o.o.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                    <div class="testimonial text-center">
+                      <h3 class="mt-3">Skoncentrowani na pracy</h3>
+                      <div class="separator"></div>
+                      <div class="testimonial-body">
+                        <blockquote>
+                          <p>Radosław Osiński w bardzo krótkim czasie zapoznał się ze złożonym projektem, paletą używanych narzędzi i kulturą panującą w organizacji.
+                            Od pierwszczego dnia wykazał pełen profesjonalizm i zaangażowanie, mogę go polecić jako specjalistę Java z doświadczeniem.</p>
+                        </blockquote>
+                        <div class="testimonial-info-1">- Kamila Stylińska</div>
+                        <div class="testimonial-info-2">Kierownik projektu Bluesoft Sp. z o.o.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <h4>
+            Oprogramowanie dostarczane przez CWSFE jest wytwarzane przez
+            programistów
+            z
+            wieloletnim doświadczeniem. Średnia doświadczenia naszych programistów to 8 lat.
+            Posiadamy doświadczenie w dostarczaniu poprawnie działającego oprogramowania na czas.
+          </h4>
+
+          <h2 class="text-center mt-4">Posiadane kompetencje programistyczne w technologiach:</h2>
+
+          <div class="row">
+            <div class="col-md-4 ">
+              <div
+                class="pv-30 ph-20 feature-box bordered shadow text-center object-non-visible animated object-visible fadeInDownSmall"
+                data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+                <span class="icon default-bg circle"><i class="fa fa-diamond"></i></span>
+                <h3>Języki</h3>
+                <div class="separator clearfix"></div>
+                <ul class="list-icons">
+                  <li>Java</li>
+                  <li>Groovy</li>
+                  <li>Html</li>
+                  <li>Java Script</li>
+                  <li>CSS</li>
+                  <li>Bash</li>
+                  <li>Antlr</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 ">
+              <div
+                class="pv-30 ph-20 feature-box bordered shadow text-center object-non-visible animated object-visible fadeInDownSmall"
+                data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+                <span class="icon default-bg circle"><i class="fa fa-connectdevelop"></i></span>
+                <h3>Frameworki</h3>
+                <div class="separator clearfix"></div>
+                <ul class="list-icons">
+                  <li>Spring</li>
+                  <li>jQuery</li>
+                  <li>ExtJS</li>
+                  <li>Struts</li>
+                  <li>KnockoutJS</li>
+                  <li>Primefaces</li>
+                  <li>JSF</li>
+                  <li>GWT</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 ">
+              <div
+                class="pv-30 ph-20 feature-box bordered shadow text-center object-non-visible animated object-visible fadeInDownSmall"
+                data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+                <span class="icon default-bg circle"><i class="icon-snow"></i></span>
+                <h3>Serwery</h3>
+                <div class="separator clearfix"></div>
+                <ul class="list-icons">
+                  <li>Wildfly</li>
+                  <li>Tomcat</li>
+                  <li>Weblogic</li>
+                  <li>Hybris</li>
+                  <li>Apache HTTP Server</li>
+                  <li>NGINX</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-4 ">
+              <div
+                class="pv-30 ph-20 feature-box bordered shadow text-center object-non-visible animated object-visible fadeInDownSmall"
+                data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+                <span class="icon default-bg circle"><i class="fa fa-diamond"></i></span>
+                <h3>Testowanie</h3>
+                <div class="separator clearfix"></div>
+                <ul class="list-icons">
+                  <li>JUnit</li>
+                  <li>Mockito</li>
+                  <li>Selenide</li>
+                  <li>Selenium</li>
+                  <li>Arquilian</li>
+                  <li>Jmeter</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 ">
+              <div
+                class="pv-30 ph-20 feature-box bordered shadow text-center object-non-visible animated object-visible fadeInDownSmall"
+                data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+                <span class="icon default-bg circle"><i class="fa fa-connectdevelop"></i></span>
+                <h3>"Continous delivery" i monitorowanie</h3>
+                <div class="separator clearfix"></div>
+                <ul class="list-icons">
+                  <li>Teamcity</li>
+                  <li>Jenkins</li>
+                  <li>Zabixx</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 ">
+              <div
+                class="pv-30 ph-20 feature-box bordered shadow text-center object-non-visible animated object-visible fadeInDownSmall"
+                data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+                <span class="icon default-bg circle"><i class="icon-snow"></i></span>
+                <h3>Zastosowania NoSQL</h3>
+                <div class="separator clearfix"></div>
+                <ul class="list-icons">
+                  <li>DynamoDB</li>
+                  <li>Hazelcast</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 ">
+              <div
+                class="pv-30 ph-20 feature-box bordered shadow text-center object-non-visible animated object-visible fadeInDownSmall"
+                data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+                <span class="icon default-bg circle"><i class="fa fa-diamond"></i></span>
+                <h3>Bazy danych:</h3>
+                <div class="separator clearfix"></div>
+                <ul class="list-icons">
+                  <li>PostgreSQL</li>
+                  <li>DB2</li>
+                  <li>Oracle</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 ">
+              <div
+                class="pv-30 ph-20 feature-box bordered shadow text-center object-non-visible animated object-visible fadeInDownSmall"
+                data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+                <span class="icon default-bg circle"><i class="fa fa-connectdevelop"></i></span>
+                <h3>Chmury</h3>
+                <div class="separator clearfix"></div>
+                <ul class="list-icons">
+                  <li>Amazon AWS</li>
+                  <li>Jelastic</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 ">
+              <div
+                class="pv-30 ph-20 feature-box bordered shadow text-center object-non-visible animated object-visible fadeInDownSmall"
+                data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+                <span class="icon default-bg circle"><i class="icon-snow"></i></span>
+                <h3>Inne używane technologie</h3>
+                <div class="separator clearfix"></div>
+                <ul class="list-icons">
+                  <li>Keycloak</li>
+                  <li>Flyway</li>
+                  <li>Hibernate / JPA</li>
+                  <li>JMS</li>
+                  <li>Gradle</li>
+                  <li>Maven</li>
+                  <li>Ant</li>
+                  <li>Webservices</li>
+                  <li>SOA</li>
+                  <li>Swing</li>
+                  <li>Git</li>
+                  <li>Svn</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h4>
+            Nasza firma zachęca swoich klientów, o ile to możliwe, do realizacji projektów w oparciu o
+            otwarte technologie nie ograniczone przez płatne licencje.
+            Zachęcamy do kontaktu i rozmowy na temat Twoich potrzeb biznesowych, to nic nie kosztuje.
+          </h4>
+
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="clearfix ">
+
+      <div class="footer">
+        <div class="container">
+          <div class="footer-inner">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="footer-content">
+                  <div class="logo-footer"><a href="/"><img src="./static/layout/CWSFE_logo_64x64.png"
+                                                            alt="CWSFE"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="footer-content">
+                  <h2 class="title">QR Kontakt</h2>
+                  <div class="separator-2"></div>
+                  <img src="./static/contact/CWSFE_VCARD_MEDIUM.png" alt="QR code with conact"/>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="footer-content">
+                  <h2 class="title">Znajdź nas</h2>
+                  <div class="separator-2"></div>
+                  <ul class="social-links circle animated-effect-1">
+                    <li class="twitter">
+                      <a target="_blank" href="https://twitter.com/OsinskiRadoslaw"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="linkedin">
+                      <a target="_blank" href="https://www.linkedin.com/in/radoslawosinski/"><i
+                        class="fa fa-linkedin"></i></a>
+                    </li>
+                  </ul>
+                  <div class="separator-2"></div>
+                  <ul class="list-icons">
+                    <li><i class="fa fa-map-marker pr-2 text-default"></i>06-430 Sońsk, ul. Ogrodowa 6
+                    </li>
+                    <li><i class="fa fa-phone pr-2 text-default"></i>+48 791-101-335</li>
+                    <li><a href="mailto:info@cwsfe.pl"><i class="fa fa-envelope-o pr-2"></i>info@cwsfe.pl</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="subfooter">
+        <div class="container">
+          <div class="subfooter-inner">
+            <div class="row">
+              <div class="col-md-12">
+                <small><p class="text-center">© 2017 <a target="_blank" href="https://cwsfe.pl/">CWSFE</a>.
+                  Wszelkie prawa zastrzeżone.</p>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+  </div>
+</div>
+
+<script type="text/javascript" src="static/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="static/plugins/tether.min.js"></script>
+<script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
+<!-- Modernizr javascript -->
+<script type="text/javascript" src="static/plugins/modernizr.js"></script>
+<!-- jQuery Revolution Slider  -->
+<script type="text/javascript" src="static/plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+<script type="text/javascript" src="static/plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+<!-- Isotope javascript -->
+<script type="text/javascript" src="static/plugins/isotope/isotope.pkgd.min.js"></script>
+<!-- Magnific Popup javascript -->
+<script type="text/javascript" src="static/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<!-- Appear javascript -->
+<script type="text/javascript" src="static/plugins/waypoints/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="static/plugins/waypoints/sticky.min.js"></script>
+<!-- Count To javascript -->
+<script type="text/javascript" src="static/plugins/jquery.countTo.js"></script>
+<!-- Parallax javascript -->
+<script src="static/plugins/jquery.parallax-1.1.3.js"></script>
+<!-- Contact form -->
+<script src="static/plugins/jquery.validate.js"></script>
+<!-- Owl carousel javascript -->
+<script type="text/javascript" src="static/plugins/owlcarousel2/owl.carousel.min.js"></script>
+<!-- Initialization of Plugins -->
+<script type="text/javascript" src="static/js/template.js"></script>
+<!-- Custom Scripts -->
+<script type="text/javascript" src="static/js/custom.js"></script>
+
+</body>
 </html>

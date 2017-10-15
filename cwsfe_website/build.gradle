@@ -39,12 +39,16 @@ node {
   nodeModulesDir = file("${project.projectDir}")
 }
 
-task createCwsfeZip(type: Zip) {
-    from 'dist/'
-    include '*'
-    include '*/*' //to include contents of a folder present inside dist directory
-    archiveName 'cwsfe.zip'
-    destinationDir(file('../build/'))
+//task createCwsfeZip(type: Zip) {
+//    from 'dist/'
+//    include '*'
+//    include '*/*' //to include contents of a folder present inside dist directory
+//    archiveName 'cwsfe.zip'
+//    destinationDir(file('../build/'))
+//}
+
+task npmPack(type: NpmTask) {
+  args = ['pack']
 }
 
 task runDev(type: NpmTask) {

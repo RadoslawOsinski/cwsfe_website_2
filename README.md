@@ -3,13 +3,8 @@ CWSFE website 2.0.
 
 #Building
 * ./gradlew npmSetup
-* ./gradlew npmInstall
-* ./gradlew createCwsfeZip
-* copy ./build/cwsfe.zip to production tomcat
+* ./gradlew npmPack
+* copy ./cwsfe_website-2.0.0.tgz to production nginx
 
 #Running website for development
-* ./gradlew runDev
-
-Run with one environment variable 
-CMS_ADDRESS='/../../CWSFE_CMS' for local CMS or
-CMS_ADDRESS='https://cwsfe.pl/CWSFE_CMS' for second server with CMS
+* browser-sync start --server 'cwsfe_website' -f 'cwsfe_website' --browser "google-chrome" --no-notify;

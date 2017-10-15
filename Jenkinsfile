@@ -9,7 +9,7 @@
         sh './gradlew --no-daemon wrapper'
         sh './gradlew --no-daemon npmSetup'
         sh './gradlew --no-daemon npmInstall'
-        sh './gradlew --no-daemon createCwsfeZip'
+        sh './gradlew --no-daemon npmPack'
     }
     stage('Integration testing') {
     }
@@ -18,5 +18,9 @@
     }
     stage('Archive results') {
         archiveArtifacts artifacts: '**/build/*.zip, fingerprint: true
+        archiveArtifacts artifacts: '**/build/*.tar.gz, fingerprint: true
     }
  }
+
+//zip -r polymer.zip build
+//scp -i ~/.ssh/atman_cwsfe_id_rsa /home/rmo/IdeaProjects/cwsfe_website_2/cwsfe_website/polymer.zip root@85.194.240.137:/tmp/

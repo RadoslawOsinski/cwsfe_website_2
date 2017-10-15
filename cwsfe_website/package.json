@@ -1,0 +1,26 @@
+{
+  "name": "cwsfe_website",
+  "version": "2.0.0",
+  "main": "index.js",
+  "description": "CWSFE website",
+  "author": "Radosław Osiński",
+  "license": "MIT",
+  "flat": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RadoslawOsinski/cwsfe_website_2.git"
+  },
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0-pre.1",
+    "@webcomponents/webcomponentsjs": "^1.0.14"
+  },
+  "bundleDependencies": [
+    "@polymer/polymer",
+    "@webcomponents/webcomponentsjs"
+  ],
+  "bugs": {
+    "url": "https://github.com/RadoslawOsinski/cwsfe_website_2/issues"
+  },
+  "homepage": "https://github.com/RadoslawOsinski/cwsfe_website_2#readme"
+
+}
