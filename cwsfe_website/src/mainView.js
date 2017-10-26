@@ -13,7 +13,7 @@ export class MainView extends PolymerElement {
       $("*[dir='ltr'] .owl-carousel.content-slider").owlCarousel({
         items: 1,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 9000,
         autoplaySpeed: 700,
         loop: true,
         nav: false,
