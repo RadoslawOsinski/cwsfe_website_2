@@ -6,6 +6,7 @@ CWSFE website 2.0.
 * ./gradlew npmPack
 
 #Delivery
+* cd cwsfe_website;
 * gunzip -c cwsfe_website-2.0.0.tgz | tar xvf -;
 * rm -Rf package/build.gradle;
 * rm -Rf package/build;
@@ -13,6 +14,8 @@ CWSFE website 2.0.
 * cp -R package/* /public/
 * firebase login (optional?)
 * firebase deploy
+* rn -Rf package;
+* rn -Rf public;
 
 #Running website for development
 * browser-sync start --server 'cwsfe_website' -f 'cwsfe_website' --browser "google-chrome" --no-notify;
