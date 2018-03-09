@@ -6,13 +6,13 @@ CWSFE website 2.0.
 * ./gradlew npmPack
 
 #Delivery
-* scp -i ~/.ssh/privKey .../cwsfe_website-2.0.0.tgz USER@ip:/tmp/;
 * gunzip -c cwsfe_website-2.0.0.tgz | tar xvf -;
 * rm -Rf package/build.gradle;
 * rm -Rf package/build;
 * rm -Rf package/package.json;
-* cp -R package/* /someFolder/
-* reload web server
+* cp -R package/* /public/
+* firebase login (optional?)
+* firebase deploy
 
 #Running website for development
 * browser-sync start --server 'cwsfe_website' -f 'cwsfe_website' --browser "google-chrome" --no-notify;
