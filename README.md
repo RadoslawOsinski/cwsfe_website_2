@@ -11,7 +11,7 @@ CWSFE website 2.0.
 * rm -Rf package/build.gradle;
 * rm -Rf package/build;
 * rm -Rf package/package.json;
-* cp -R package/* public/
+* cp -R package public
 * firebase login (optional?)
 * firebase deploy
 * rm -Rf package;
