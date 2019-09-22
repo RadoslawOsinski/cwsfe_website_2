@@ -1,5 +1,5 @@
 # cwsfe_website_2
-CWSFE website 2.0.
+CWSFE website 2.0.1
 
 #Building
 * ./gradlew npmSetup
