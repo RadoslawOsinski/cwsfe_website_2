@@ -7,7 +7,7 @@ CWSFE website 2.0.1
 
 #Delivery
 * cd cwsfe_website;
-* gunzip -c cwsfe_website-2.0.0.tgz | tar xvf -;
+* gunzip -c cwsfe_website-2.0.1.tgz | tar xvf -;
 * rm -Rf package/build.gradle;
 * rm -Rf package/build;
 * rm -Rf package/package.json;

@@ -8,6 +8,16 @@
  * File Description: Place here your custom scripts
  */
 
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("../serviceworker.js").then(function(registration) {
+  }).catch(function(err) {
+    console.log(err);
+  });
+} else {
+  console.log('No serviceWorker support. Please consider browser upgrade.');
+  //show upgrade browser message
+}
+
 (function($){
 	$(document).ready(function(){
 

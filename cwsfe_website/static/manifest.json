@@ -2,16 +2,19 @@
   "manifest_version": 2,
   "name": "CWSFE",
   "short_name": "CWSFE",
-  "version": "2.0",
-
+  "version": "2.0.1",
+  "display": "fullscreen",
+  "scope": "/",
+  "start_url": "/",
   "default_locale": "en",
   "description": "CWSFE - Complete Working Solution For Everyone",
   "icons": [{
-    "src": "/resources-cwsfe/img/layout/images/CWSFE_logo_64x64.png",
+    "src": "layout/CWSFE_logo_64x64.png",
     "sizes": "64x64"
   }, {
-    "src": "/resources-cwsfe/img/layout/images/CWSFE_logo_150x150.png",
+    "src": "layout/CWSFE_logo_150x150.png",
     "sizes": "150x150"
-  }]
-
+  }],
+  "theme_color": "#242424",
+  "background_color": "#242424"
 }

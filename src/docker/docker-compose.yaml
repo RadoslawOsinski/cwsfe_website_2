@@ -1,0 +1,13 @@
+version: '3'
+services:
+  cwsfe:
+    build:
+      context: ../../cwsfe_website
+      dockerfile: src/docker/Dockerfile
+#    volumes:
+#      - ./:/var/www/cwsfe
+    ports:
+    - "8080:443"
+    environment:
+    - NGINX_HOST=devcwsfe.pl
+    - NGINX_PORT=443
