@@ -11,6 +11,7 @@ CWSFE website 2.0.1
 * rm -Rf package/build.gradle;
 * rm -Rf package/build;
 * rm -Rf package/package.json;
+* rm -Rf package/src/docker;
 * cp -R package public
 * firebase login (optional?)
 * firebase deploy
