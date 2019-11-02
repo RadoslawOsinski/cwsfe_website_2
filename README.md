@@ -1,13 +1,14 @@
 # cwsfe_website_2
-CWSFE website 2.0.1
+CWSFE website 2.0.2
 
 #Building
 * ./gradlew npmSetup
 * ./gradlew npmPack
 
 #Delivery
+* (zaktualizować wersję w serviceworker.js oraz w package.json)
 * cd cwsfe_website;
-* gunzip -c cwsfe_website-2.0.1.tgz | tar xvf -;
+* gunzip -c cwsfe_website-2.0.2.tgz | tar xvf -;
 * rm -Rf package/build.gradle package/build package/package.json package/src/docker;
 * cp -R package public
 * firebase login (optional?)
