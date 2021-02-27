@@ -1,4 +1,4 @@
-let CACHE_NAME = "cwsfe-website-cache-v3";
+let CACHE_NAME = "cwsfe-website-cache-v4";
 let CACHED_URLS = [
   //css
   "https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic",
